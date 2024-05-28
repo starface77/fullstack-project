@@ -1,18 +1,1354 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERO TRAVEL - Путишествуй вместе с нами</title>
-</head>
-<body>
-    <nav>
-        <div class="logo">
-            <div class="left">
-                <img src="{% static 'imgs/logo_white.png' %}" alt="logo">
+<html lang="ru">
+    <head>
+        <title>Pero Travel</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/adaptive.css">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <body>
+      <header id="header">
+          <div class="container">
+              <div class="container-width">
+                <div class="header--inner">
+                    <div class="header--icon">
+                        <img alt="logo" src="img/logo.png">
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav--menu">
+                            <li><a href="#" class="nav--link">Главная</a></li>
+                            <li><a href="excursion.html" class="nav--link">Экскурсии</a></li>
+                            <li><a href="view.html" class="nav--link">Личный кабинет</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
+          </div>
+      </header>
+      <section class="intro">
+        <div class="container">
+          <div class="container-width">
+            <div class="intro--img"></div>
+                  <div class="intro--content">
+                    <div class="intro--title">
+                        <h1 class="intro--title-white">Путешествуй</h1>
+                        <h2 class="intro--title-yellow">Вместе с </h2>
+                        <h1 class="intro--title-opacity">Pero Travel</h1>
+                    </div>
+                    <div class="intro--socials">
+                        <a href="#" class="socials--item"><img src="img/vk.svg"></a>
+                        <a href="#" class="socials--item"><img src="img/inst-bw.svg"></a>
+                        <a href="#" class="socials--item"><img src="img/facebook-bw.svg"></a>
+                    </div>
+                </div>
+                <button type="button" class="intro--button button">К экскурсиям</button>
+                <div class="intro--video">
+                    <div class="video--item"><img class="play" src="img/play.svg" alt=""></div>
+                    <div class="video--item"></div>
+                </div>
+              </div>
+          </div>
+      </section>
+      <div class="wrapper">
+      <main class="content">
+        <section class="top-excursion">
+            <div class="container">
+              <div class="container-width-left"> <!-- для секций, где есть margin 160px слева -->
+                <div class="top-excursion--suptitle suptitle">
+                    <h3 class="suptitle-heading">Популярные экскурсии</h3>
+                    <a href="#"><p class="suptitle-ancor">Смотреть еще</p></a>
+                </div>
+                  <div class="top-excursion--cards">
+                    <div class="card card-first">
+                      <div class="card--content">
+                        <p class="card--suptitle">Автобусный тур</p>
+                        <h4 class="card--title">Обзорная по Сочи (из Адлера)</h4>
+                        <div class="card--info">
+                          <span class="info info--time">
+                            <div class="info-img">
+                              <img src="img/time.svg">
+                            </div>
+                            <p class="info--text">6 часов</p>
+                          </span>
+                          <span class="info info--costs">
+                              <div class="info-img">
+                                <img src="img/costs.svg">
+                              </div>
+                            <p class="info--text">618 ₽</p>
+                          </span>
+                        </div>
+                        <div class="card--text">
+                          <p>Приглашаем вас на экскурсию
+    "Обзорная по Большому Сочи":
+    Экскурсия начнется с подъёма на гору Большой Ахун - это  высшая точка (665 метров) на побережьи Сочи. На вершине горы Большой Ахун есть смотровая башня, построенная в 1935-36 годах по проекту архитектора С. И. Воробьева...</p>
+                        </div>
+                          <button type="button" class="card--button button" placeholder="Подробнее">Подробнее</button>
+                        </div>
+                    </div>
+                      <div class="card card-second">
+                            <div class="card--content">
+                                <p class="card--suptitle">Конный тур</p>
+                                <h4 class="card--title">Конные прогулки</h4>
+                                <div class="card--info">
+                                    <span class="info info--time">
+                                        <div class="info-img">
+                                            <img src="img/time.svg">
+                                        </div>
+                                        <p class="info--text">1,5 часа</p>
+                                    </span>
+                                    <span class="info info--costs">
+                                        <div class="info-img">
+                                            <img src="img/costs.svg">
+                                        </div>
+                                        <p class="info--text">1 809 ₽</p>
+                                    </span>
+                                </div>
+                                <div class="card--text">
+                                    <p>Конные прогулки проходят в Лазурной долине. С долины открывается красивый вид на море, горы и лес. На всем пути следования экскурсии вас будут сопровождать опытные инструктора. Катание на лошадях или иппотерапия очень полезна для детей и взрослых...</p>
+                                </div>
+                                <button type="button" class="card--button button" placeholder="Подробнее">Подробнее</button>
+                            </div>
+                        </div>
+                        <div class="card card-third">
+                            <div class="card--content">
+                              <p class="card--suptitle">Квадротур</p>
+                              <h4 class="card--title">Пасть дракона</h4>
+                            <div class="card--info">
+                              <span class="info info--time">
+                                <div class="info-img">
+                                  <img src="img/time.svg">
+                                </div>
+                                <p class="info--text">2,5 часа</p>
+                              </span>
+                              <span class="info info--costs">
+                                <div class="info-img">
+                                  <img src="img/costs.svg">
+                                </div>
+                                <p class="info--text">3 515 ₽</p>
+                              </span>
+                            </div>
+                            <div class="card--text">
+                              <p>Маршрут на Квадроциклах проходит по горной реке Мзымта вдоль белых скал и самшитовый лес к водопаду Глубокий Яр или "Пасть Дракона" (экскурсионное название).
+Высота водопада 41,5 метр - это один из самых высоких водопадов Большого Сочи...</p>
+                              </div>
+                                <button type="button" class="card--button button" placeholder="Подробнее">Подробнее</button>
+                            </div>
+                        </div>
+                    <div class="card card-fourd">
+                      <div class="card--content">
+                        <p class="card--suptitle">Автобусный тур</p>
+                          <h4 class="card--title">Женский монастырь</h4>
+                            <div class="card--info">
+                              <span class="info info--time">
+                                <div class="info-img">
+                                  <img src="img/time.svg">
+                                </div>
+                                  <p class="info--text">4 часа</p>
+                              </span>
+                              <span class="info info--costs">
+                                <div class="info-img">
+                                  <img src="img/costs.svg">
+                                </div>
+                                  <p class="info--text">618 ₽</p>
+                              </span>
+                           </div>
+                            <div class="card--text">
+                              <p>Троице - Георгиевский женский монастырь расположен в селе Лесное в живописном месте, в котором гармонично сочетаются красота природы и красота архитектуры сотворенная руками человека.
+Это удивительное место расположено совсем недалеко от Чёрного моря - всего в 20 километрах
+</p>
+                          </div>
+                        <button type="button" class="card--button button" placeholder="Подробнее">Подробнее</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider">
+                    <div class="slider--elements"></div>
+                    <progress class="progress" value="20" max="100">20</progress>
+                </div>
+              </div>
+            </div>
+        </section>
+            <section class="aboutUs container">
+                <div class="aboutUs-container container">
+                  <div class="container-width-right">
+                    <div class="aboutUs-img">
+                      <div class="aboutUs--block">
+                        <h3>О нас</h3>
+                        <p>PeroTravel - Первый онлайн-сервис по бронированию экскурсий без очередей и операторов.
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="types">
+              <div class="types--container">
+                <div class="container">
+                  <div class="container-width">
+                      <div class="types--suptitle suptitle">
+                          <h3 class="suptitle-heading">Виды экскурсий</h3>
+                          <a href="#"><p class="suptitle-ancor">Смотреть еще</p></a>
+                        </div>
+                      <div class="types--grid">
+                            <div class="types--grid-item">
+                                <div class="item-types--img"><img src="img/types-1.png"></div>
+                                <div class="item-types--text">
+                                    <h4>Автобусный тур</h4>
+                                    <p>Один из самых насыщенных впечатлениями, доступных по цене и популярных видов отдыха. Во время одной поездки можно посмотреть достопримечательности сразу нескольких городов, причем обойдется это едва ли не в разы дешевле классического экскурсионного тура с ночевками в отелях.</p>
+                                </div>
+                            </div>
+                            <div class="types--grid-item">
+                                <div class="item-types--img"><img src="img/types-2.png"></div>
+                                <div class="item-types--text">
+                                    <h4>Джиппингр</h4>
+                                    <p>Это путешествие на автомобилях высокой проходимости с преодолением естественных препятствий, это экстремальный вид спорта и отдыха, представляющий собой прохождение туристического маршрута по бездорожью на автомобилях.</p>
+                                </div>
+                            </div>
+                            <div class="types--grid-item">
+                                <div class="item-types--img"><img src="img/types-3.png"></div>
+                                <div class="item-types--text">
+                                    <h4>Яхтинг</h4>
+                                    <p>Это то же, что круиз на лайнере или прогулка на пароме, только на яхте больше свободы, размеры судна в разы меньше, нет назойливой команды, можно самостоятельно почувствовать себя капитаном, постоять за штурвалом. Именно здесь вы почувствуете величайшие просторы Черногор моря.</p>
+                                </div>
+                            </div>
+                            <div class="types--grid-item">
+                                <div class="item-types--img"><img src="img/types-4.png"></div>
+                                <div class="item-types--text">
+                                    <h4>Каньонинг</h4>
+                                    <p>Это экстремально-спортивный вид отдыха, который заключается в преодолении каньонов (обводненных или нет) при помощи альпинистского и иного снаряжения, а иногда и вброд, но без лодок или иных плавсредств.</p>
+                                </div>
+                            </div>
+                        </div>
+                      <div class="types-footer">
+                            <p>Выбирайте на нашем сайте экскурсию, которая подходит именно вам и записывайтесь онлайн без очередей, просто и быстро!</p>
+                            <button type="button" class="button types--bottom">К экскурсиям</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="gallery">
+              <div class="gallery-container container">
+                <div class="gallery suptitle gallery-suptitle">
+                  <h3 class="suptitle-heading">Галерея</h3>
+                  <a href="#"><p class="suptitle-ancor">Смотреть еще</p></a>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery--item gallery--item-first"><img src="img/1.png"></div>
+                    <div class="gallery--item gallery--item-second"><img src="img/2.png"></div>
+                    <div class="gallery--item gallery--item-third"><img src="img/3.png"></div>
+                    <div class="gallery--item gallery--item-fourth"><img src="img/4.png"></div>
+                    <div class="gallery--item gallery--item-fifth"><img src="img/5.png"></div>
+                    <div class="gallery--item gallery--item-sixth"><img src="img/6.png"></div>
+                    <div class="gallery--item gallery--item-seventh"><img src="img/7.png"></div>
+                    <div class="gallery--item gallery--item-eighth"><img src="img/8.png"></div>
+                </div>
+              </div>
+            </section>
+            <section class="comments">
+                <div class="container">
+                  <div class="container-width-left">
+                    <div class="comments-suptitle suptitle">
+                        <h3 class="suptitle-heading">Популярные экскурсии</h3>
+                        <a href="#"><p class="suptitle-ancor">Смотреть еще</p></a>
+                    </div>
+                    <div class="comments--items">
+                        <div class="comments--item">
+                            <div class="comments--item-img"><img src="img/couple.png"></div>
+                            <div class="comments--text">
+                                <h4 class="comments--text-who">Иван Иванов, 25 лет</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                            <div class="comments--back-img"><img src="img/zapatii.png"></div>
+                        </div>
+                        <div class="comments--item">
+                            <div class="comments--item-img"><img src="img/couple.png"></div>
+                            <div class="comments--text">
+                                <h4 class="comments--text-who">Иван Иванов, 25 лет</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider--elements"></div>
+                        <progress class="progress" value="20" max="100">20</progress>
+                    </div>
+                  </div>
+                </div>
+            </section>
+            <section class="question">
+              <div class="question--background"></div>
+                <div class="question--block">
+                    <div class="question-content">
+                        <h4>Остались вопросы?</h4>
+                        <p>Оставь заявку и мы ответим</p>
+                        <form class="question--form">
+                          <div class="input">
+                              <input type="text" class="input-field" value="" required/>
+                              <label class="input-label">Имя</label>
+                            </div>
+                          <div class="input">
+                              <input type="email" class="input-field" value="" required/>
+                              <label class="input-label">Почта</label>
+                          </div>
+                          <div class="input">
+                              <input type="phone" class="input-field" required/>
+                              <label class="input-label">Номер</label>
+                             </div>
+                        </form>
+                        <button type="button" class="button question--button">Оставить заявку</button>
+                    </div>
+                  </div>
+            </section>
+        </main>
+        <footer id="footer">
+          <div class="container">
+            <div class="container-width">
+              <div class="footer-wrap">
+                <div class="footer-logo">
+                    <img src="img/logo_color.svg" alt="logo">
+                </div>
+                <nav class="nav nav-footer">
+                  <ul class="menu-footer">
+                        <li><a href="index.html" class="link-footer">Главная</a></li>
+                        <li><a href="excursion.html" class="link-footer">Экскурсии</a></li>
+                        <li><a href="#" class="link-footer">Личный кабинет</a></li>
+                    </ul>
+                </nav>
+                <div class="footer--numbers">
+                    <div class="numbers-item">
+                      <img class="footer-icon" src="img/telegram.png">
+                      <p>+7 964 944 18 74<p>
+                    </div>
+                    <div class="numbers-item">
+                      <img class="footer-icon" src="img/telegram.png">
+                      <p>+7 964 944 18 74</p>
+                    </div>
+                    <div class="numbers-item">
+                      <img class="footer-icon" src="img/telegram.png">
+                      <p>Телеграм-бот PeroTravel</p>
+                    </div>
+                </div>
+                <div class="footer--socials">
+                    <div div class="socials-mail">
+                        <img class="footer-icon" src="img/telegram.png">
+                        <p>office@perotravel.ru</p>
+                    </div>
+                    <div class="socials--item">
+                        <div class="footer-icon"><img src="img/vk-color.png"></div>
+                        <div class="footer-icon"><img src="img/inst-color.png"></div>
+                        <div class="footer-icon"><img src="img/facebook%201.png"></div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
         </div>
-    </nav>
-</body>
+    </body>
+    <style>
+        *,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+body, html {
+    background-color:  #FFFFFF;
+    color: #282828;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+h1, h2, h3, h4, h5, h6  {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    width: 230px;
+    height: 50px;
+    background: linear-gradient(92.71deg, #0499DD 0%, #17C1BC 100%);
+    border-radius: 60px;
+    color: #fff;
+    border: 0px solid;
+}
+
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0px auto;
+}
+
+.content {
+  overflow: hidden;
+  flex: 1 0 auto;
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+.footer {
+	flex: 0 0 auto;
+}
+
+/* header */
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header--inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0 0 0;
+}
+
+
+.header--icon img {
+    width: 40px;
+    height: 58px;
+}
+
+/* nav */
+
+.nav--menu li {
+    display: inline-block;
+}
+
+.nav--link {
+    color: #fff;
+    transition: color .2s linear;
+    display: block;
+    vertical-align: top;
+    margin: 0 10px;
+}
+
+.nav--link:hover {
+    color: #FFC700;
+}
+
+/* intro */
+
+.intro {
+    width: 100%;
+    height: 789px;
+    margin: 0px -62px 260px 0px;
+    background: url(../img/mainImg.png) center no-repeat;
+    background-size: cover;
+}
+
+.intro--content {
+    display: flex;
+    align-items: center;
+    padding: 237px 0px 60px 0px;
+    justify-content: space-between;
+}
+
+.intro--title {
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    margin-bottom: 60px;
+}
+
+.intro--title-white {
+    height: 88px;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 88px;
+    color: #FFFFFF;
+}
+
+.intro--title-yellow {
+    font-family: 'Pacifico', cursive;
+    font-weight: 100;
+    font-size: 64px;
+    line-height: 64px;
+    color: #FFC700;
+    text-transform: lowercase;
+    position: absolute;
+    top: 25%;
+    right: 5%;
+}
+
+.intro--title-opacity {
+    /*height: 117px;*/
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 117px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-family: sans-serif;
+}
+
+.intro--socials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 11px;
+}
+
+.socials--item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 20px 0 0 0;
+}
+
+.intro--video {
+  display: flex;
+  position: absolute;
+  bottom: 1018px;
+  right: -177px;
+}
+
+.play {
+  width: 66px;
+  height: 66px;
+}
+
+.video--item {
+  min-width: 360px;
+  height: 227px;
+  border-radius: 10px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video--item:first-child {
+  background: url(../img/manriver.png) center no-repeat;
+  background-size: cover;
+}
+
+.video--item:nth-child(2) {
+  background: url(../img/road_forest.png) center no-repeat;
+  background-size: cover;
+}
+
+
+/* top-excursion */
+
+.top-excursion {
+    display: flex;
+    margin-bottom: 150px;
+}
+
+.suptitle {
+    display: flex;
+    margin-bottom: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.suptitle-heading {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0499DD;
+
+}
+
+.suptitle-ancor {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    text-decoration-line: underline;
+    color: #282828;
+}
+
+/* card */
+
+.card {
+    min-width: 360px;
+    height: 497px;
+    border-radius: 10px;
+    padding: 16px 16px 42px 16px;
+    position: relative;
+    margin: 0px 20px 0px 0px;
+}
+
+.card--content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: inherit;
+}
+
+.card-first {
+    background: url(../img/bridge.png) center no-repeat;
+    background-size: cover;
+}
+
+.card-second {
+    background: url(../img/horse.png) center no-repeat;
+    background-size: cover;
+}
+
+.card-third {
+    background: url(../img/2.png) center no-repeat;
+    background-size: cover;
+}
+
+.card-fourd {
+    background: url(../img/monastir.png) center no-repeat;
+    background-size: cover;
+}
+
+.top-excursion--cards {
+    color: #fff;
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.card--suptitle {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-bottom: 2px;
+}
+
+.card--title {
+    width: 233px;
+    height: 17px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFC700;
+    margin-bottom: 10px;
+}
+
+.card--info {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+}
+
+.info--text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+}
+
+.info-img {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+
+.info--time {
+    margin-right: 15px;
+}
+
+.card--text {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: left;
+    height: 105px;
+    margin-bottom: 20px;
+}
+
+.card--button {
+    width: 160px;
+    height: 40px;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+/* slider */
+.slider {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slider--elements::before {
+    content: url('../img/slider-left.svg');
+    width: 43px;
+    height: 24px;
+    margin-right: 38px;
+}
+
+.slider--elements::after {
+    content: url('../img/slider-right.svg');
+    width: 43px;
+    height: 24px;
+    margin-right: 51px;
+}
+
+
+.progress[value] {
+    width: 80%;
+    height: 8px;
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.progress[value]::-webkit-progress-bar {
+  background-color: #D4D4D4;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgb(0 68 191 / 25%) inset;
+}
+
+.progress[value]::-webkit-progress-value {
+    background-color: #0499DD;
+    border-radius: 20px;
+}
+
+/* aboutUs */
+.aboutUs {
+    margin-bottom: 150px;
+}
+
+.aboutUs-container {
+  margin: 0;
+}
+
+.aboutUs-img {
+    background: url(../img/foresetRiver.png) center no-repeat;
+    background-size: cover;
+    border-radius: 0px 10px 10px 0px;
+    width: 1071px;
+    height: 749px;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.aboutUs--block {
+    position: absolute;
+    top: 20%;
+    right: -25%;
+    width: 542px;
+    height: 476px;
+    background-color: #EDEDED;
+    border-radius: 10px;
+    padding: 61px 75px 105px 85px;
+}
+
+.aboutUs--block h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #0499DD;
+    margin-bottom: 40px;
+}
+
+.aboutUs--block p{
+    max-width: 382px;
+    min-height: 136px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+}
+
+.aboutUs--block p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/* types */
+.types {
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: center;
+}
+.types--comtainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types--suptitle {
+  margin: 0 0 90px 0;
+}
+
+.types--grid {
+    margin-bottom: 60px;
+    display: grid;
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 57px 132px;
+}
+
+.types--grid-item {
+    display: flex;
+}
+
+.item-types--img {
+    width: 75px;
+    height: 75px;
+    margin-right: 10px;
+}
+
+.item-types--text {
+    width: 455px;
+}
+
+.item-types--text h4{
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #0499DD;
+    margin-bottom: 10px;
+}
+
+.item-types--text p{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+}
+
+
+
+.types-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.types-footer p{
+    width: 550px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #282828;
+}
+
+.types--bottom {
+    border-radius: 60px;
+    width: 230px;
+    height: 50px;
+    margin-top: 30px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+}
+
+/* gallery */
+
+.gallery {
+    margin-bottom: 150px;
+}
+
+.gallery-suptitle {
+  padding: 0 160px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template: repeat(3, auto) / repeat(6, auto);
+    grid-gap: 10px 20px;
+}
+
+.gallery--item {
+    border-radius: 5px;
+}
+
+.gallery--item-first {
+    width: 503.48px;
+    height: 280.5px;
+    grid-column: 1/3;
+    grid-row: 1/1;
+}
+
+.gallery--item-second {
+    width: 362px;
+    height: 567px;
+    grid-column: 3/3;
+    grid-row: 1/3;
+}
+
+.gallery--item-third {
+    width: 269.85px;
+    height: 263.95px;
+    grid-column: 4;
+    grid-row: 1/1;
+}
+
+.gallery--item-fourth {
+    width: 216.5px;
+    height: 263.95px;
+    grid-column: 5/6;
+    grid-row: 1/1;
+}
+
+.gallery--item-fifth {
+    width: 216.5px;
+    height: 263.95px;
+    grid-row: 2/3;
+    grid-column: 1;
+}
+
+.gallery--item-sixth {
+    width: 266.85px;
+    height: 403.29px;
+    grid-column: 2/2;
+    grid-row: 2/3;
+}
+
+.gallery--item-seventh {
+    width: 266.85px;
+    height: 123.29px;
+    grid-column: 2/2;
+    grid-row: 2;
+}
+
+.gallery--item-eighth {
+    grid-column: 4/6;
+    grid-row: 2;
+    height: 265.5px;
+}
+
+.gallery--item img {
+  object-fit: none;
+  border-radius: 10px;
+}
+
+/* comments */
+
+.comments {
+    margin-bottom: 150px;
+}
+
+.comments--items {
+    display: flex;
+}
+
+.comments--item {
+    max-width: 740px;
+    height: 322px;
+    background: #EDEDED;
+    border-radius: 10px;
+    padding: 38px 27px 45px 39px;
+    display: flex;
+    margin: 0px 40px 40px 0px;
+    position: relative;
+    z-index: 2;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.comments--item-img {
+    width: 245px;
+    height: 245px;
+    margin-right: 28px;
+    border-radius: 10px;
+}
+
+.comments--text p {
+    width: 395px;
+    height: 153px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+}
+
+.comments--text-who {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #282828;
+    margin-bottom: 20px;
+}
+
+.comments--back-img {
+    z-index: 1;
+    position: absolute;
+    bottom: 0px;
+    right: 58px;
+}
+
+
+/*question*/
+.question {
+    position: relative;
+}
+
+.question--background {
+    background: url(../img/form.png) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 640px;
+}
+
+.question--block {
+    width: 560px;
+    height: 640px;
+    position: absolute;
+    top: 0px;
+    right: 160px;
+    background: rgb(0 0 0 / 12%);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question--block h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+}
+
+.question--block p {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFC700;
+    margin: 6px 0px 60px 0px;
+}
+
+.question--form {
+    margin-bottom: 83px;
+}
+
+.input {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    padding-top: 1.5rem;
+}
+
+.input-label {
+    color: #ffffff;
+    position: absolute;
+    top: 1.5rem;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 60px;
+}
+
+.input-field {
+    width: 360px;
+    border: 0;
+    z-index: 1;
+    background-color: transparent;
+    border-bottom: 1px solid #FFFFFF;
+    font: inherit;
+    font-size: 1.125rem;
+    padding: 0px 0px 0px 50px;
+    color: #ffffff;
+}
+
+/* FOOTER */
+
+.footer-wrap {
+    display: flex;
+    flex-direction: row;
+    margin: 30px 0 30px 0;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo {
+    width: 80px;
+    height: 114px;
+}
+
+.menu-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 35px 0px 0px;
+    list-style: none;
+}
+
+.link-footer {
+    color: #111;
+    margin: 0 0 15px 0;
+    display: inline-block;
+}
+
+.nav-footer li{
+    margin-bottom: 8px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+}
+
+.numbers-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer--numbers {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer--socials {
+    display: flex;
+    flex-direction: column;
+    color: #282828;
+    margin: 0px 0px 28px 0px;
+}
+
+.socials-mail {
+    display: flex;
+}
+
+.footer-icon {
+    width: 31px;
+    height: 20px;
+    margin: 0 10px 0 0;
+}
+
+.container-width {
+  margin: 0px 160px 0 160px;
+}
+
+.container-width-left {
+  margin: 0px 0px 0 160px;
+}
+
+.container-width-right {
+  margin: 0px 160px 0px 0px;
+}
+
+
+/*******  PHONE ******/
+
+@media only screen and (min-width: 0px) and (max-width: 428px) {
+  .container-width {
+  margin: 0px 24px 0 24px;
+}
+
+.container-width-left {
+  margin: 0px 0px 0 24px;
+}
+
+.container-width-right {
+  margin: 0px 24px 0px 0px;
+}
+
+.container {
+    width: 100%;
+    color: #fff;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.nav--menu li {
+    display: none;
+}
+
+/* intro */
+
+.intro {
+    max-width: 428px;
+    height: 928px;
+    margin: 0px -62px 241px 0px;
+}
+
+.intro--content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.intro--title-white {
+    font-size: 36px;
+    line-height: 44px;
+    height: 60px;
+}
+
+.intro--title-yellow {
+  font-size: 32px;
+  line-height: 48px;
+  top: 15%;
+  right: -27px;
+}
+
+.intro--title-opacity {
+  font-size: 72px;
+  line-height: 90%;
+  width: 305px;
+  height: 130px;
+}
+
+.intro--socials {
+  position: absolute;
+  bottom: 143px;
+  right: 24px;
+}
+
+.intro--video {
+  bottom: -160px;
+  right: 74px;
+}
+
+.video--item {
+  min-width: 295px;
+  height: 187px;
+}
+
+/* top-excursion */
+
+.suptitle-ancor {
+    display: none;
+}
+
+/* card */
+
+.card {
+    min-width: 280px;
+    height: 540px;
+}
+
+.card--suptitle {
+    font-size: 13px;
+}
+
+.info-img {
+    width: 12px;
+    height: 12px;
+    margin-right: 4px;
+}
+
+.info--time {
+    margin-right: 15px;
+}
+
+.card--text {
+  height: 160px;
+  width: 253px;
+
+}
+
+.aboutUs-img {
+  height: 704px;
+  width: 304px;
+}
+
+.aboutUs--block {
+  height: 386px;
+  width: 380px;
+  padding: 43px;
+  left: 24px;
+}
+
+.aboutUs--block p{
+  width: 130px;
+  height: 170px;
+  font-size: 13px;
+  width: 294px;
+  height: 96px;
+  line-height: 16px;
+}
+
+.aboutUs--block p:first-child {
+    margin-bottom: 20px;
+}
+
+
+/* types */
+.types {
+  display: block;
+}
+
+.types--grid {
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-types--text {
+    width: 515px;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+.types-footer p{
+    font-size: 13px;
+    line-height: 16px;
+    width: 380px;
+    height: 48px;
+}
+
+.item-types--img {
+  margin-right: 20px;
+}
+
+/* gallery */
+
+.gallery-grid {
+    display: grid;
+    grid-template: repeat(2, auto) / repeat(3, auto);
+    row-gap: 12px;
+    justify-content: center;
+    justify-items: center;
+}
+.gallery-suptitle {
+  padding: 0 79px;
+}
+
+
+.gallery--item {
+    border-radius: 5px;
+}
+
+.gallery--item-first {
+    width: 380px;
+    height: 260px;
+    grid-column: 1/3;
+    grid-row: 3;
+}
+
+.gallery--item-second {
+    width: 180px;
+    height: 400px;
+    grid-column: 1/2;
+    grid-row: 1/3;
+}
+
+.gallery--item-third {
+    grid-column: 2;
+    grid-row: /1;
+    width: 180px;
+    </style>
 </html>
